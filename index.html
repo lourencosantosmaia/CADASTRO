@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro</h1>
+        <form action="process.php" method="post" enctype="multipart/form-data">
+            <div class="label-photo">
+                <input type="file" name="photo" id="photo" class="inputfile" accept="image/*" required>
+                <label for="photo">Escolher Foto</label>
+            </div>
+            <img id="preview" src="#" alt="Preview da foto" style="display: none; max-width: 200px; margin-bottom: 10px;">
+            
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name" required>
+    
+            <label for="phone">Telefone:</label>
+            <input type="tel" name="phone" id="phone" required>
+    
+            <label for="reference_phone">Telefone de Referência:</label>
+            <input type="tel" name="reference_phone" id="reference_phone" required>
+    
+            <label for="responsible">Nome do Responsável:</label>
+            <input type="text" name="responsible" id="responsible" required>
+    
+            <input type="submit" value="Cadastrar">
+        </form>
+    </div>
+    
+        <!--Para a API do Google Maps, você precisará de uma chave de API válida. Você pode adicionar o mapa à página HTML usando JavaScript e a API do Google Maps. Aqui está um exemplo básico de como fazer isso (você precisará substituir 'SUA_CHAVE_AQUI' pela sua chave de API real): --> 
+        
+    <script src="./JavaScript/script.js"></script>
+
+    <div id="map" style="height: 400px;"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_AQUI&callback=initMap" async defer></script>
+
+
+
+</body>
+</html>
